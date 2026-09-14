@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<md:EntityDescriptor entityID="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/shibboleth" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:pyff="http://pyff.io/NS" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" xmlns:eidas="http://eidas.europa.eu/saml-extensions" xmlns:ti="https://seamlessaccess.org/NS/trustinfo" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:samla="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:remd="http://refeds.org/metadata" xmlns:req-attr="urn:oasis:names:tc:SAML:protocol:ext:req-attr">
+    <md:Extensions>
+      <mdrpi:RegistrationInfo registrationAuthority="https://tuakiri.ac.nz/" registrationInstant="2020-10-30T01:45:24Z">
+        <mdrpi:RegistrationPolicy xml:lang="en">https://tuakiri.ac.nz/documents/tuakiri-mrps-1.0.pdf</mdrpi:RegistrationPolicy>
+      </mdrpi:RegistrationInfo>
+      <mdattr:EntityAttributes>
+        <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+        </saml:Attribute>
+        <saml:Attribute Name="urn:oasis:names:tc:SAML:attribute:assurance-certification" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml:AttributeValue>https://refeds.org/sirtfi</saml:AttributeValue>
+          <saml:AttributeValue>https://refeds.org/sirtfi2</saml:AttributeValue>
+        </saml:Attribute>
+      </mdattr:EntityAttributes>
+    </md:Extensions>
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+        <shibmd:Scope regexp="false">reannz.co.nz</shibmd:Scope>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">REANNZ</mdui:DisplayName>
+          <mdui:Description xml:lang="en">Research and Education Advanced Network New Zealand (REANNZ) provides the pathways and connections for research and science collaboration</mdui:Description>
+          <mdui:Logo xml:lang="en" height="25" width="150">https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/images/logo.jpg</mdui:Logo>
+        </mdui:UIInfo>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIEqDCCAxCgAwIBAgIUWQ5CSAKEZbcXbqSlij9WGBRUoTowDQYJKoZIhvcNAQELBQAwPzE9MDsG
+A1UEAww0aG9zdGVkLWxvZ2luLnRlc3QudHVha2lyaS5hYy5uei9ob3N0aW5nL3JlYW5uei5jby5u
+ejAeFw0yMDEyMDgwMTM2MjRaFw00MDEyMDMwMTM2MjRaMD8xPTA7BgNVBAMMNGhvc3RlZC1sb2dp
+bi50ZXN0LnR1YWtpcmkuYWMubnovaG9zdGluZy9yZWFubnouY28ubnowggGiMA0GCSqGSIb3DQEB
+AQUAA4IBjwAwggGKAoIBgQDUQGiX3dtBX2CbIMRR7Vbo0LaKRMwXsVcXL5/5aw8AlSpeyw7XKWjb
+fDK6CWGgizRe5vX9XPWwNWNIszf7qSguYCPfzAepE79fxeKte6MOekuRlJtBja+O8RW9EEz3e7fy
+nzxf4C2mnapTJwtpnCtENm7wd8KPFOvQZXhyWRNuoQVLwaLVY60aHzgu4bjaPdXm+grvv8AzjFiT
+mahNgEMWczeolWZdNU008Q9amc+dCA78wyVdeTIFN+yJatUNyJ4iKCeUrncfL00JIm3BuywJgjEh
+aMPWbubLiOm7IJ27r810d2fhbASiauESgyFAnupv2l+dTCJrG+dNEISK98bucTmMScJtaXhzLXZl
+7ADYWxU4m+pGHASIgl5k5m/OOfxXdedwGCcspqtMAlnIRLFb4YeFIwpHOvZo4NRwtQXVQZhcckTm
+JOstwfKJunYEkgUvqdClLnhpOUFL3ig4b12ryuqJ4IGGZZdDohSyoImtF4/qRAVrihkT0SvrZFU7
+0Z8CAwEAAaOBmzCBmDB3BgNVHREEcDBugh9ob3N0ZWQtbG9naW4udGVzdC50dWFraXJpLmFjLm56
+hktodHRwczovL2hvc3RlZC1sb2dpbi50ZXN0LnR1YWtpcmkuYWMubnovaG9zdGluZy9yZWFubnou
+Y28ubnovaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFNaufW60qarsnvPdeCP7tLlibT3SMA0GCSqG
+SIb3DQEBCwUAA4IBgQCTwWmLr7wbE4RX+HvSQ9Z/bwbSqFYYK8aTgjZOpQo2gnJaK1Wz6LmG1tg6
+RdtkixwgZqO1ghEsKH2VrA8zbfEtLZGgD/eDl46ZAOhnkxyZVP/IEbX4KosrHXxwoM92Ue976oY/
+d05ceO9DfAeyFLZUFkmexqvO2xNANB8fCmBZIosEVlOvkjH3jEcu2E0WkazQ99s3GpufLRrXpRki
++n3YIy1g5Ig8wZDL7yfoOuw3pq1hMxoR6yGCkSnNkivly5d3ecsfdcxvLyGa7wNd6GwPJQeP2aEK
+Vx/DhloTb31fwxoFPjPDaFqFzlytpJ6ZQcnWpTw7nDZTf34eQkqK97qWoIBQV3y514s4MLHxUjQ0
+5os2krz5vg/L+VNF2XpBlonyqrNNI0ei8RiTBg50246txi8FeBFhZbLjsILgVhCi+T1gUC4OmbVJ
+T1AwKEQtIgESz69shC+B+rI+354AuxTtdBiWgn9r7ZLghEAd0WFWYbseslPeGj5O7Z90KAP5aGU=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIEqDCCAxCgAwIBAgIULe3ePNv4iYoFZCyRB4zAAJvskbUwDQYJKoZIhvcNAQELBQAwPzE9MDsG
+A1UEAww0aG9zdGVkLWxvZ2luLnRlc3QudHVha2lyaS5hYy5uei9ob3N0aW5nL3JlYW5uei5jby5u
+ejAeFw0yMDEyMDgwMTM2MjlaFw00MDEyMDMwMTM2MjlaMD8xPTA7BgNVBAMMNGhvc3RlZC1sb2dp
+bi50ZXN0LnR1YWtpcmkuYWMubnovaG9zdGluZy9yZWFubnouY28ubnowggGiMA0GCSqGSIb3DQEB
+AQUAA4IBjwAwggGKAoIBgQDN0J/v5P08l8CO4v4roV6r7LJlOw6zFntisqlZpghq/MHuXqA7xYt+
+NMla7rfWJ9durKP1O4H7gUGMb303mCtCaeuEetUaRMJ4FS1aLwtdr1UWIFnKR13XCne+ylANYv8n
+G7Abb3Dkl/o5ZV15GLQVZsnfBnHgqVHigid+VOlbIBLMRh1l3GLWT2JlNCgHf+vVv/BXpQG3g4mW
+olw7QbYURWDcQvLDP0UJY/wZitZlNhd01J+fUIXhWV/KW74/TBkGPOv75mwTpfDKPqIkrFUEiTfF
+T9+8LyCfrCA+CM3XgYZEpf76Euo/mSZoRdCDHuab3sjCZFuOrZJ9Mco6l/s4kitIL/+BXbf1aIhz
+s85wD72VQ4J39gTPSeNpDp00Y1nWSUARiwZNm7gmGDUIxNAygkOytVct+gTkqCud0TmJHEAYFDOG
+ssF3QxDqOwtqZu48opQfDtli2S20OQ417vWmOs07XWgbcEUA2FTHO23gObW/6pWPS2Nw5BE3Uot/
+Qd0CAwEAAaOBmzCBmDB3BgNVHREEcDBugh9ob3N0ZWQtbG9naW4udGVzdC50dWFraXJpLmFjLm56
+hktodHRwczovL2hvc3RlZC1sb2dpbi50ZXN0LnR1YWtpcmkuYWMubnovaG9zdGluZy9yZWFubnou
+Y28ubnovaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFNsA355hgFwxUlfJ3TfqUgHEpxA/MA0GCSqG
+SIb3DQEBCwUAA4IBgQCstGsn/dD//MPOq1o8YDS/NCNBYmPN9SHVLugz85bQ7hqVqjGccCJ7eq8O
+7edyjMUW4XjP8BGEwctRYRwdqMoYbET+a6Yhinn3hLx5P3SLHvSKwVa0DaXlXAxR/zAEUrOug4pI
+7Dbr6HlhXKeZqWDjVnoAeaEmRab6kPsfBfQygfyMRL9JZdQUNbPOeNYJLfw8bNRg4rT58SbwZ3Dw
+mjORP7ZgQXuy3/E478yqpzOnbuMAVw3UKHfWKcaR875f0Qg7SfxlgBwl+VosM4Ej3OscGgCqv+3a
+1DLhnKLaOlA6ad0Y8MfgGlDCpGEdNJcD7U5SBjjlW0+JPecqXz0U+8N2yvXrM531pvW6g8AJioo5
+qHPtLyAympub6Rx3Fez0PfrihZ7dc6/fXZsI2rWVMIufUab5tmhdapOROhEGr6qY26oSC6qoOtqI
+WO4LGmJ06NiojqbVYRz0xlaBanrIc8g0ivrYxlTWmk26jTcYzHJguxsCNVlhwAQvr6q3cRn7SYs=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/POST-SimpleSign/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/POST/SLO"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/Redirect/SLO"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" req-attr:supportsRequestedAttributes="true" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/POST/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" req-attr:supportsRequestedAttributes="true" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" req-attr:supportsRequestedAttributes="true" Location="https://hosted-login.test.tuakiri.ac.nz/hosting/reannz.co.nz/idp/profile/SAML2/Redirect/SSO"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.27856.1.2.5" FriendlyName="auEduPersonSharedToken"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:2.5.4.3" FriendlyName="cn"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:2.16.840.1.113730.3.1.241" FriendlyName="displayName"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1" FriendlyName="eduPersonAffiliation"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.11" FriendlyName="eduPersonAssurance"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.7" FriendlyName="eduPersonEntitlement"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.5" FriendlyName="eduPersonPrimaryAffiliation"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" FriendlyName="eduPersonPrincipalName"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" FriendlyName="eduPersonScopedAffiliation"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:2.5.4.42" FriendlyName="givenName"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:0.9.2342.19200300.100.1.3" FriendlyName="mail"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:2.5.4.10" FriendlyName="o"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" FriendlyName="schacHomeOrganization"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:1.3.6.1.4.1.25178.1.2.10" FriendlyName="schacHomeOrganizationType"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oid:2.5.4.4" FriendlyName="sn"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oasis:names:tc:SAML:attribute:pairwise-id" FriendlyName="samlPairwiseID"/>
+      <saml:Attribute NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" Name="urn:oasis:names:tc:SAML:attribute:subject-id" FriendlyName="samlSubjectID"/>
+    </md:IDPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">reannz.co.nz</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">REANNZ</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.reannz.co.nz/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>REANNZ</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:staff-support@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>Tuakiri</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:tuakiri@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="administrative">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>Tuakiri</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:tuakiri@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>Tuakiri</md:GivenName>
+      <md:SurName>Security</md:SurName>
+      <md:EmailAddress>mailto:security@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
