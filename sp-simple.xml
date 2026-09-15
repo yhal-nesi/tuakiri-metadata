@@ -1,0 +1,102 @@
+<md:EntityDescriptor entityID="https://iam.dev.nesi.org.nz/realms/hpc" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="ID_02c6ac49-40d9-4749-ba69-dcfacd2983e4">
+
+<dsig:Signature>
+<dsig:SignedInfo>
+<dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<dsig:Reference URI="#ID_2ba6e2db-cd1e-4d49-9124-0be53f891cdc">
+<dsig:Transforms>
+<dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</dsig:Transforms>
+<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<dsig:DigestValue>3lcwDyZstB6f7X7fqMqUKgRFmhTfiIqk5dGwLF14kWs=</dsig:DigestValue>
+</dsig:Reference>
+</dsig:SignedInfo>
+<dsig:SignatureValue>
+pLwfNndY6ZaWFXFc4Ggx1kcyoyLcoMvr9frmw3JYvP8JoxUjIHv2XEx/Dx/1Z9DGomuyUUxpxcLHZHSzGYOA021K4jRPbySfLhxMGQrq2co774SIOibh3QxPS8PKlQSAlizv3N1BzKIOsBMnHD4TdXJkdK2Xyc2GSSQC/Tt0qenSRPbQ6AvfTKa+N4U3D2oUbavlosHyixg+GE/CEHTXgJgZL3NPsL4JaGY+sVjAhcm16JbQMnmx20//yKtECtnPhx9LkIcELxxe41hG+cjDG/SebQzuRR6SjDoyOftfaXnGqcXkJZ71V+7n689GT+CFWgJtRBDy7O43a2bOUeUxHw==
+</dsig:SignatureValue>
+<dsig:KeyInfo>
+<dsig:X509Data>
+<dsig:X509Certificate>
+MIIClTCCAX0CBgGgjmIPUzANBgkqhkiG9w0BAQsFADAOMQwwCgYDVQQDDANocGMwHhcNMjYwOTExMDI1MTI2WhcNMzYwOTExMDI1MzA2WjAOMQwwCgYDVQQDDANocGMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvL6ZnInDe3a11V1/r0uxA1Pmm06/CuLSWqY0uYPDCnIPPt8+mGYjHCOQv7HcJyWJNuegSk5neh9+WczC9iRiKqSubKXOJUtvyz7n2UFb3s07oaRnqUdZ0ocD0zk+VAqplsR07fSMjxVvVh4KFVtu82Bo0vXEnx3OjSbkJx3oa5n5CCt6BweXVpKcbnAw/7hQvm7jRUnjTyHodrE/JhqHKP+NopyV+dE/rb4lQpa6f/xZYN6h+JMS9UsqOb8cygjosKLUO6xzdvoh7qRQ1IU9i+AJesB4VuQ+4DnJjXh2iExtP1vRZHIMjhjpKPmWqLeCC9y7UIaESznTKy5T90ibfAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAADg6qEHTp8NttNTzYi5vesMytMLELvr8cp3PAwj3oGFFLplRGPhuNHgZtWE/DqZ/rjzAwOVg9pyAEg+hUGleNyTlQobM933o6BDxqulyf6IcwZQh/NZn26JxiD13VZfR38CDp3o5VWILp3K8LCzQ8n0HwcwApe67NDJgoQcPO1ZGTN1sB735yD/SUM1WT7kdTKeg+Bvgr8HnVf5SIUxXb0b8lNiG9bCHVzm7YfdfqOTQnGM9ZGWylVFJ09125xfZmKHlLtMl7rqso/Fdv//mQUEFC5onLETPW/pjT2FOZCy8AJ9urpcVQ5lsDB72XHmFqqNmiYj/mfP4D2pQy/XXBM=
+</dsig:X509Certificate>
+</dsig:X509Data>
+</dsig:KeyInfo>
+</dsig:Signature>
+
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
+    <md:Extensions>
+        <mdui:UIInfo>
+          <mdui:DisplayName xml:lang="en">REANNZ Keycloak</mdui:DisplayName>
+          <mdui:Description xml:lang="en">REANNZ Keycloak</mdui:Description>
+        </mdui:UIInfo>
+      </md:Extensions>
+
+
+
+<md:KeyDescriptor use="encryption">
+<dsig:KeyInfo>
+<dsig:KeyName>HsoUchwFJm7Z5kFyV39V3aWGwF5ij4CDXkc5i0cBa64</dsig:KeyName>
+<dsig:X509Data>
+<dsig:X509Certificate>
+MIIClTCCAX0CBgGgjmIPwTANBgkqhkiG9w0BAQsFADAOMQwwCgYDVQQDDANocGMwHhcNMjYwOTExMDI1MTI2WhcNMzYwOTExMDI1MzA2WjAOMQwwCgYDVQQDDANocGMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnr96Pn+eo5SL0ePQxk1gomZXdFFy/BhGe+IcKtrdc19vf4a8DXMzuIgMO9FFcsW5aVkhVroG3ICgMfFtLikzLDpZmu5ZLIsMulgQjDa2qzw0Tc3mc1DKHuHbOAQMA51n1MvAa3Jk6L9rBgdifMh8wrvOTsshADHaQJeyT6G4SmLWiPfDJka4CmpBRHr9a39b6FeqvpLTEOZ8Lzw2tln54HTHn5FCDUvRkez//p2oGM0fW7KUp+qQhcqJ7pkHx6jWg09rbaM3tJvIa9P0pbVkkH7J5T6UIIe3PH79zzQ+4yB3dkqjoeKlw8aXh6QbuzJaZfiJRNDh1RS0hI+sLzZEtAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAIh2G4+8KVmKo+b3kZH9IwnN8OdGXaLWx+iMxOf2GRnUjj3vtpg7s+T5nAEOUWU2+kiXKYW6AxUm/WUjrfsxMOkB+08/ncltIr6oc281o4ZuCUhTKJzEnBsSJz0yvaZGTdce6l8sghs0RqQwVkm0/vvgq+zveizD/0LhiUxfrpYzrIIRsKxLHih/pJt0IL3ImHVGDtOigmZy2I/efAquBetV0unJ0GoQd+HIfax9XZz9GNrVTMm2gyX+omfi1uacAiTi3mbD/avpNIUCD5A2U/2GWEKWBYIGal3/TMnKY7PjdrIWS6erIq6DjfZbPcnbqDh4azDLI13UyIEqe9uF93w=
+</dsig:X509Certificate>
+</dsig:X509Data>
+</dsig:KeyInfo>
+<md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+<md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+</md:KeyDescriptor>
+
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/otago/endpoint"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/otago/endpoint"/>
+<md:NameIDFormat>
+urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+</md:NameIDFormat>
+
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/otago/endpoint" isDefault="true" index="1"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/otago/endpoint" index="2"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/otago/endpoint" index="3"/>
+
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/auckland/endpoint" index="4"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/auckland/endpoint" index="5"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/auckland/endpoint" index="6"/>
+
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/reannz/endpoint" index="7"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/reannz/endpoint" index="8"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://iam.dev.nesi.org.nz/realms/hpc/broker/reannz/endpoint" index="9"/>
+
+      <md:AttributeConsumingService index="1">
+        <md:ServiceName xml:lang="en">HPC Platform (DEV)</md:ServiceName>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="eduPersonTargetedID" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:0.9.2342.19200300.100.1.3" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="mail" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.6" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="eduPersonPrincipalName" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="eduPersonScopedAffiliation" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.27856.1.2.5" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="auEduPersonSharedToken" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.25178.1.2.9" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="schacHomeOrganization" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:1.3.6.1.4.1.25178.1.2.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="schacHomeOrganizationType" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:2.5.4.10" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="o" isRequired="true"/>
+        <md:RequestedAttribute Name="urn:oid:2.5.4.42" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="givenName" isRequired="false"/>
+        <md:RequestedAttribute Name="urn:oid:2.5.4.4" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="sn" isRequired="false"/>
+      </md:AttributeConsumingService>
+</md:SPSSODescriptor>
+
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">reannz.co.nz</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">REANNZ</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.reannz.co.nz/</md:OrganizationURL>
+    </md:Organization>
+
+    <md:ContactPerson contactType="technical">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>Yuriy H</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:yuriy.halytskyy@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="administrative">
+      <md:Company>REANNZ</md:Company>
+      <md:GivenName>Yuriy H</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>mailto:yuriy.halytskyy@reannz.co.nz</md:EmailAddress>
+    </md:ContactPerson>
+</md:EntityDescriptor>
